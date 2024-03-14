@@ -1,0 +1,60 @@
+
+#tituloCalculadora1 {
+    color: #5CB767;
+    text-align: center;
+    margin: 0;
+
+}
+
+#tituloCalculadora2 {
+    color: #FA8939;
+    text-align: center;
+    margin: 0;
+
+}
+
+.subtext{
+    font-weight: bold;
+
+}
+
+#caixaGeral{
+    display: flex;
+    flex-direction: row;
+}
+
+#caixaPrincipal{
+    background-color: #F8F5F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+    padding: 50px;
+    
+}
+
+#imagemGalinha{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    margin: auto;
+}
+
+img{
+    width: 200px;
+}
+
+#caixaBotao{
+    display: flex;
+    margin-left: 465px;
+}
+
+#botao{
+    font-weight: bold;
+    width: 120px;
+    height: 60px;
+}
+
+
+

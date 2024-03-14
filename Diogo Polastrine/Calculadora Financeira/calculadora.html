@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Calculadora Financeira </title>
+
+    <link rel="stylesheet" href="./calculadora.css">
+</head>
+
+<div id="caixaGeral">
+    <div id="caixaPrincipal">
+
+        <h1 id="tituloCalculadora1"> Calculadora Financeira </h1>
+        <h1 id="tituloCalculadora2"> CheckChicken </h1>
+
+
+        <p class="subtext"> Informe a quantidade de lotes do seu aviário: </p>
+        <input type="number" id="input_qntdLotes" placeholder="X Lotes">
+
+        <p class="subtext"> Informe a quantidade de galinhas por lote: </p>
+        <input type="number" id="input_qntdGalinhas" placeholder="X Galinhas">
+
+        <p class="subtext"> Informe o preço da sua granja: </p>
+        <input type="number" id="input_precoGalinha" placeholder="X Reais">
+
+        <p class="subtext"> Quantos KG são gastos mensalmente com ração: </p>
+        <input type="text" id="input_kgGastos" placeholder="X Kg">
+
+        <p class="subtext"> Qual o mensal gasto com consultas veterinárias: </p>
+        <input type="text" id="input_precoConsulta" placeholder="X Reais">
+
+    </div>
+
+    <div id="imagemGalinha">
+        <img src="https://static.wikia.nocookie.net/minecraft_gamepedia/images/2/2c/Chicken_JE2_BE2.png/revision/latest?cb=20190721103652" >
+    </div>
+</div>
+
+<div id="caixaBotao">
+<button id="botao" onclick="exibirCalculo()"> Fazer Simulação </button>
+</div>
+
+<body>
+
+</body>
+
+</html>
+
+
+<script>
+
+    function exibirCalculo(){
+        var qntdLotes = Number(input_qntdLotes.value)
+        var qntdGalinhas = Number(input_qntdGalinhas.value)
+        var precoGalinha = Number(input_precoGalinhas.value)
+        var kgGastos = Number(input_kgGastos.value)
+        var precoConsulta = Number(input_precoConsulta.value)
+
+        
+
+    }
+
+
+
+</script>
