@@ -1,3 +1,8 @@
+body{
+    background-color: #8fb393;
+}
+
+
 
 #tituloCalculadora1 {
     color: #5CB767;
@@ -13,6 +18,16 @@
 
 }
 
+#imgLogo1{
+    width: 300px;
+    height: 180px;
+}
+
+#imgLogo2{
+    width: 100px;
+    height: 60px;
+}
+
 .subtext{
     font-weight: bold;
 
@@ -24,21 +39,41 @@
 }
 
 #caixaPrincipal{
+    border: 3px solid #28632f;
+    border-radius: 10%;
     background-color: #F8F5F0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 400px;
-    margin: auto;
-    padding: 50px;
+    padding: 30px;
     
 }
 
-#imagemGalinha{
+#caixaSecundaria{
+    border: 3px solid #28632f;
+    border-radius: 10%;
+    background-color: #F8F5F0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    padding: 0 30px;
+}
+
+#caixaGalinha:hover{
+    background-color: #fddfab;
+}
+
+#caixaGalinha{
+    background-color: #F8F5F0;
     display: flex;
     justify-content: center;
     width: 250px;
     margin: auto;
+    padding: 100px;
+    border: 3px solid #28632f;
+    border-radius: 100%;
 }
 
 img{
@@ -46,14 +81,16 @@ img{
 }
 
 #caixaBotao{
-    display: flex;
-    margin-left: 465px;
+    margin-top: 20px;
 }
-
 #botao{
     font-weight: bold;
     width: 120px;
     height: 60px;
+}
+
+#textoExibido{
+    font-size: 18px;
 }
 
 
