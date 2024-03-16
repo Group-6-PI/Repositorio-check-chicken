@@ -1,2 +1,2 @@
 # Repositorio-check-chicken
-Repositório dos códigos criados para produção do projeto Check Chiken.
+Repositório dos códigos criados para produção do projeto Check Chicken.
