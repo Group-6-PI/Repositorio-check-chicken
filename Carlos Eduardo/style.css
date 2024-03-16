@@ -26,21 +26,10 @@ body {
   border-radius: 4px;
 }
 
-/* Background-color muda com mouse por cima */
-.header-left a:hover {
-  background-color: #FFE087;
-  color: #0C2626;
-}
-
 .header img{
   width: 120px;
 }
 
-/* Style do link atual*/
-.header a.active {
-  background-color: #FFB800;
-  color: #0C2626;
-}
 
 /* Links pra direita */
 .header-right {
@@ -48,12 +37,10 @@ body {
 }
 
 /* Calculadora */
-
 .section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: stretch;
   z-index: 1;
   font-family: 'Dosis', sans-serif;
 }
@@ -87,7 +74,7 @@ body {
   font-weight: 600;
 }
 
-/*style da Div de resultados*/
+/*style da Div de resultados
 .divResultado {
   font-family: 'Dosis', sans-serif;
   gap: 24px;
@@ -106,6 +93,7 @@ body {
   bottom: 0;
   z-index: 1;
 }
+*/
 
 .divSimulador {
   font-size: 16px;
@@ -126,15 +114,6 @@ body {
   min-width: fit-content;
 }
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
--webkit-appearance: none;
-margin: 0;
-}
-
-input[type=number] {
--moz-appearance: textfield;
-}
 
 .botaoSimulador {
   font-family: 'Dosis', sans-serif;
@@ -175,46 +154,3 @@ input[type=number] {
   cursor: pointer;
 }
 
-
-.tituloResultado {
-  align-self: stretch;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.valoresContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  width: 100%;
-}
-.valoresTitulo {
-  font-size: 16px;
-
-}
-.valoresResultado {
-  font-size: 32px;
-}
-
-.ctaContainer {
-  background-color: #FFBF00;
-  color: #0C2626;
-  border-radius: 40px;
-  padding: 16px 24px;
-  display: flex;
-  flex-direction: row;
-}
-.ctaText {
-  font-size: 16px;
-  font-weight: 600;
-}
-.ctaLink {
-  font-size: 16px;
-  color: #0C2626;
-  font-weight: 800;
-  text-decoration: underline;
-}
-
-.ctaLink:hover {
-  color: #154242;
-}
