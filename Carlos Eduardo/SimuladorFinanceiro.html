@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Financeira CheckChicken</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+     <!-- Header -->
+ <div class="header">
+    <img src="../Carlos Eduardo/logoCheckChicken.png" href="index.html">
+    <a href="index.html" class="logo"></a>
+  </div>
+    
+    <div class="section" id="calc_scroll">
+        <p class="tituloSimulador">
+          Simule sua produção e veja como pode alavancar seu negócio!
+        </p>
+        <div class="divContainer">
+          <div class="divSimulador">
+            <div>
+              <span class="tituloItem">Informe a quantidade de lotes do seu aviário:</span><br>
+              <div class="inputContainer">
+                <input type="number" onkeypress="return event.charCode >= 48" min="1" class="inputSimulador"
+                  id="i_qtd_colmeia" value="10">
+                <button onclick="calcValores(1)" class="botaoSimulador">+</button>
+                <button onclick="calcValores(2)" class="botaoSimulador">-</button>
+              </div>
+            </div>
+            <div>
+              <span class="tituloItem">Informe a quantidade de galinhas por lote: </span>
+              <div class="inputContainer">
+                <input class="inputSimulador" id="i_qtd_colmeias_perdidas" value="2">
+                <button onclick="calcValores(3)" class="botaoSimulador">+</button>
+                <button onclick="calcValores(4)" class="botaoSimulador">-</button>
+              </div>
+            </div>
+            <div>
+              <span class="tituloItem"> Informe o preço da unidade de galinha do seu lote: </span><br>
+              <div class="inputContainer">
+                <input class="inputSimulador" id="i_qtd_kg" value="10">
+                <button onclick="calcValores(5)" class="botaoSimulador">+</button>
+                <button onclick="calcValores(6)" class="botaoSimulador">-</button>
+              </div>
+            </div>
+            <div>
+              <span class="tituloItem"> Qual o custo de produção mensal por galinha em Reais:(Ração, água, ...) </span><br>
+              <div class="inputContainer">
+                <input class="inputSimulador" id="i_valor_mel" value="10">
+                <button onclick="calcValores(7)" class="botaoSimulador">+</button>
+                <button onclick="calcValores(8)" class="botaoSimulador">-</button>
+              </div>
+              <span class="tituloItem">Quanto é gasto em custos adicionais mensais: (Veterinário, vacinas, cuidados, ...)</span><br>
+              <div class="inputContainer">
+                <input class="inputSimulador" id="i_valor_mel" value="10">
+                <button onclick="calcValores(9)" class="botaoSimulador">+</button>
+                <button onclick="calcValores(10)" class="botaoSimulador">-</button>
+              </div>
+              <button class="botaoResultado" onclick="aparecerResultado()">
+                Simular
+              </button>
+            </div>
+    
+          </div>
+          <div id="div_resultado" class="divResultado">
+            <span class="tituloResultado">
+              Resultado
+            </span>
+            <div class="valoresContainer">
+              <span class="valoresTitulo">Quantidade de mel perdido por ano:</span>
+              <span class="valoresResultado" id="mel_perdido">10kg</span>
+            </div>
+            <div class="valoresContainer">
+              <span class="valoresTitulo">Prejuizo estimado em um ano:</span>
+              <span class="valoresResultado" id="valor_perda">R$500,00</span>
+            </div>
+            <div class="valoresContainer">
+              <span class="valoresTitulo">Percentual de perda:</span>
+              <span class="valoresResultado" id="percentual_perda">25%</span>
+            </div>
+            <div class="ctaContainer">
+              <span class="ctaText">A CheckChicken pode te ajudar.
+                  Entrar em contato
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
+<script>
+
+
+
+
+
+
+</script>
