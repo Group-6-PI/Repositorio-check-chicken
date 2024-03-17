@@ -31,15 +31,15 @@
         </div>
         <img class="logo" src="images/logo_novo.png">
     </div>
-    
+
 </body>
 
 </html>
 
-<script> 
+<script>
     function CalcularKgPerdido() {
         var qtd_ave_perdida = Number(input_qtd_perdida.value)
-        var peso_galinha = 2.4 
+        var peso_galinha = 2.4
         var kg_perdido = qtd_ave_perdida * peso_galinha
 
         div_resultado.innerHTML = `${kg_perdido.toFixed(2)} KG<br><span class="destaque" onclick="HelpKGPerdido()">EM AVES PERDIDAS</span>`
@@ -54,7 +54,7 @@
     function CalcularPrejuizo() {
         var qtd_ave_perdida = Number(input_qtd_perdida.value)
         var preco_kg = Number(input_preco_kg.value)
-        var peso_galinha = 2.4 
+        var peso_galinha = 2.4
         var kg_perdido = qtd_ave_perdida * peso_galinha
         var prejuizo = kg_perdido * preco_kg
 
@@ -71,7 +71,7 @@
     function CalcularPrejuizoRacao() {
         var qtd_ave_perdida = Number(input_qtd_perdida.value)
         var preco_racao = Number(input_preco_kg_racao.value)
-        var peso_galinha = 2.4 
+        var peso_galinha = 2.4
         var kg_perdido = qtd_ave_perdida * peso_galinha
         var prejuizo_racao = kg_perdido * preco_racao
 
@@ -89,10 +89,10 @@
         var qtd_ave_perdida = Number(input_qtd_perdida.value)
         var preco_kg = Number(input_preco_kg.value)
         var preco_racao = Number(input_preco_kg_racao.value)
-        var peso_galinha = 2.4 
-        var kg_perdido = qtd_ave_perdida * peso_galinha 
-        var prejuizo = kg_perdido * preco_kg 
-        var prejuizo_racao = kg_perdido * preco_racao 
+        var peso_galinha = 2.4
+        var kg_perdido = qtd_ave_perdida * peso_galinha
+        var prejuizo = kg_perdido * preco_kg
+        var prejuizo_racao = kg_perdido * preco_racao
         var prejuizo_total_mes = prejuizo + prejuizo_racao
         var prejuizo_total_ano = (prejuizo + prejuizo_racao) * 12
 
@@ -105,7 +105,7 @@
                 ${prejuizo_total_ano.toFixed(2)} REAIS
                 <span class="destaque" onclick=HelpPrejuizoAnual()>ANUAIS</span>
             </div>
-            <button onclick="AjudaCheck()" class="ajuda">VER COMO A CHECK<br>CHICKEN PODE ME AJUDAR</button>`
+            <button onclick="AjudaCheck()" class="botao-ajuda">VER COMO A CHECK<br>CHICKEN PODE ME AJUDAR</button>`
     }
     function HelpPrejuizoAnual() {
         alert('Perspectiva mensal e anual do seu prejuizo estimado apartir destes dados')
@@ -115,10 +115,10 @@
     //     var preco_kg = Number(input_preco_kg.value)
     //     var preco_racao = Number(input_preco_kg_racao.value)
 
-    //     var peso_galinha = 2.4 
-    //     var kg_perdido = qtd_ave_perdida * peso_galinha 
-    //     var prejuizo = kg_perdido * preco_kg 
-    //     var prejuizo_racao = kg_perdido * preco_racao 
+    //     var peso_galinha = 2.4
+    //     var kg_perdido = qtd_ave_perdida * peso_galinha
+    //     var prejuizo = kg_perdido * preco_kg
+    //     var prejuizo_racao = kg_perdido * preco_racao
     //     var prejuizo_total_mes = prejuizo + prejuizo_racao
     //     var prejuizo_total_ano = (prejuizo + prejuizo_racao) * 12
 
@@ -127,7 +127,7 @@
 
     //     div_dash.innerHTML = `
     //         <div class="total menor">
-    //             ${ajudaCheck_mes.toFixed(2)} REAIS<br> 
+    //             ${ajudaCheck_mes.toFixed(2)} REAIS<br>
     //             <span class="destaque">DE REDUÇÃO NO PREJUIZO MENSAL</span><br>
     //             ${ajudaCheck_ano.toFixed(2)} REAIS<br>
     //             <span class="destaque">DE REDUÇÃO NO PREJUIZO ANUAL</span>

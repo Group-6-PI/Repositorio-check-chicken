@@ -46,6 +46,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 input {
@@ -55,6 +56,8 @@ input {
     height: 30px;
     margin-top: 4px;
     padding-left: 10px;
+    padding: auto;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .simular {
     border: 0px;
@@ -64,6 +67,7 @@ input {
     width: 50%;
     height: 70px;
     font-size: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .simular:hover {
     background-color: #dd772d;
@@ -99,6 +103,7 @@ input {
     border-radius: 30px;
     background-color: #FA8939;
     color: white;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .seta:hover {
     background-color: #dd772d;
@@ -136,13 +141,14 @@ input {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .total {
     color: white;
     font-size: 60px;
     text-align: center;
 }
-.ajuda {
+.botao-ajuda {
     border: 0px;
     border-radius: 30px;
     background-color: #FA8939;
@@ -152,8 +158,9 @@ input {
     font-size: 25px;
     position: relative;
     bottom: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.ajuda:hover{
+.botao-ajuda:hover{
     background-color: #dd772d;
 }
 .menor {
