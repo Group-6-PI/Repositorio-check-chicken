@@ -22,46 +22,34 @@
             <div>
               <span class="tituloItem">Informe a quantidade de lotes do seu aviário:</span><br>
               <div class="inputContainer">
-                <input type="number" onkeypress="return event.charCode >= 48" min="1" class="inputSimulador"
+                <input type="number" class="inputSimulador"
                   id="input_lotesAviario" value="10">
-                <button onclick="calcValores(1)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(2)" class="botaoSimulador">-</button>
               </div>
             </div>
             <div>
               <span class="tituloItem">Informe a quantidade de galinhas por lote: </span>
               <div class="inputContainer">
-                <input class="inputSimulador" id="input_galinhasPorLote" value="2">
-                <button onclick="calcValores(3)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(4)" class="botaoSimulador">-</button>
+                <input class="inputSimulador" id="input_galinhasPorLote" value="0">
               </div>
             </div>
             <div>
               <span class="tituloItem">Informe o preço da unidade de galinha do seu lote: </span><br>
               <div class="inputContainer">
                 <input class="inputSimulador" id="input_precoGalinha" value="10">
-                <button onclick="calcValores(5)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(6)" class="botaoSimulador">-</button>
               </div>
             </div>
             <div>
               <span class="tituloItem"> Informe a taxa de mortalidade dos seus lotes:  </span><br>
               <div class="inputContainer">
                 <input class="inputSimulador" id="input_taxaMortalidadeMensal" value="10">
-                <button onclick="calcValores(7)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(8)" class="botaoSimulador">-</button>
               </div>
               <span class="tituloItem">Qual o custo de produção mensal por galinha: (Ração, água, ...)</span><br>
               <div class="inputContainer">
                 <input class="inputSimulador" id="input_custoProducao" value="10">
-                <button onclick="calcValores(9)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(10)" class="botaoSimulador">-</button>
               </div>
               <span class="tituloItem">Quanto é gasto em custos adicionais mensais: (Veterinário, vacinas, cuidados, ...)</span><br>
               <div class="inputContainer">
                 <input class="inputSimulador" id="input_custosAdicionais" value="10">
-                <button onclick="calcValores(11)" class="botaoSimulador">+</button>
-                <button onclick="calcValores(12)" class="botaoSimulador">-</button>
               </div>
               <button class="botaoResultado" onclick="aparecerResultado()">
                 Simular
@@ -69,6 +57,7 @@
             </div>
     
           </div>
+        </div>
         
 </body>
 </html>

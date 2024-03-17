@@ -31,34 +31,6 @@ var qntdLotes = Number(input_lotesAviario.value)
     var lucroMensalB = receitaMensalB - custosAdicionais/2  // Lucro mensal baseado na quantidade de lotes vendidos e a diferença pela metade dos custos adicionais
     var lucroAnualB = (lucroMensalB / 2) * 12     // Lucro anual considerando uma margem de valor reduzida somente em 2 (Devida a solução)
   
-  //Somas e subtrações dos inputs pelos botões
-  function calcValores(numero) {
-    if (numero == 1) {
-        input_lotesAviario.value++;
-    } else if (numero == 2 && input_lotesAviario.value > 0) {
-        input_lotesAviario.value--;
-    } else if (numero == 3) {
-        input_galinhasPorLote.value++;
-    } else if (numero == 4 && input_galinhasPorLote.value > 0) {
-        input_galinhasPorLote.value--;
-    } else if (numero == 5) {
-        input_precoGalinha.value++;
-    } else if (numero == 6 && input_precoGalinha.value > 0) {
-        input_precoGalinha.value--;
-    } else if (numero == 7) {
-        input_taxaMortalidadeMensal++;
-    } else if (numero == 8 && input_taxaMortalidadeMensal > 0) {
-        input_taxaMortalidadeMensal.value--;
-    } else if (numero == 9){
-        input_custoProducao.value++;
-    } else if (numero == 10 &&  input_custoProducao > 0) {
-        input_custoProducao.value--;
-    } else if (numero == 11){
-        input_custosAdicionais.value++;
-    } else if (numero == 12 && input_custosAdicionais > 0) {
-        input_custosAdicionais.value--;
-    }
-  }
 
 function aparecerResultado() {
     

@@ -9,7 +9,6 @@ body {
   padding: 20px 10px;
   margin: 0;
   font-family: "Dosis", sans-serif;
-  position: fixed;
   z-index: 2;
   width: 100%;
 }
@@ -53,10 +52,10 @@ body {
   text-align: center;
 }
 .divContainer {
-  margin: 16px 126px;
+  margin: 200px 126px;
   display: flex;
   flex-direction: row;
-  gap: 160px;
+
 }
 
 .inputContainer {
@@ -154,3 +153,46 @@ body {
   cursor: pointer;
 }
 
+
+.tituloResultado {
+  align-self: stretch;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.valoresContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+.valoresTitulo {
+  font-size: 16px;
+
+}
+.valoresResultado {
+  font-size: 32px;
+}
+
+.ctaContainer {
+  background-color: #FFBF00;
+  color: #0C2626;
+  border-radius: 40px;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: row;
+}
+.ctaText {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ctaLink {
+  font-size: 16px;
+  color: #0C2626;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.ctaLink:hover {
+  color: #154242;
+}
