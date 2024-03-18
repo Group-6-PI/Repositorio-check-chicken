@@ -42,6 +42,8 @@ insert into endereço values
 (3, 'MG', 'Belo Horizonte', '56789012', 'Barro Preto', 'Rua das Flores', '789', 'Casa 303');
 
 
+ 
+
 
 
 
