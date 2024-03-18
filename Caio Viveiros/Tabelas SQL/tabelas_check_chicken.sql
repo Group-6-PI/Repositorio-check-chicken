@@ -59,8 +59,28 @@ select * from empresa;
 select * from lote;
 
 select nome as 'Nome de Usuario', email as 'Email', telefone as 'Telefone para contato' from cadastro; 
+
 select nome as 'Nome da Empresa', cep as 'CEP', estado as 'Estado' from empresa;
+
 select identificador as 'Identificador do lote', qtdGalinha as 'Quantidade de galinhas', idade as 'Faixa etaria' from lote;
 
-select concat ('Ola, ', nome, ' Verifique seu email atraves do codigo enviado para: ', email) as 'Verificação' from cadastro
+select concat 
+('Ola, ', nome, ' Verifique seu email atraves do codigo enviado para: ', email) as 'Verificação' from cadastro
 where idUsuario in (1,3,5);
+
+select concat 
+('Bem-vindos, ', nome, ' por favor confirme seu endereço cadastrado: ', 
+logadouro, ', numero ', numero, ' do estado de ', estado, ' e cidade ', cidade) as 'Localização da Empresa' from empresa; 
+
+select concat
+('O ', identificador, ' tem: ', qtdGalinha, ' galinhas na faixa etária de ', idade, ' dias.') as 'Informações de lote' from lote;
+
+select email, senha from cadastro
+where nome like '%ra';
+
+select nome, cnpj, cep from empresa
+where estado = 'São Paulo';
+
+select identificador, idade as 'Faixa etária' from lote
+where qtdGalinha > 450;
+
