@@ -2,6 +2,11 @@
 <html lang="en">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Calculadora Financeira </title>
@@ -9,7 +14,14 @@
     <link rel="stylesheet" href="./calculadora.css">
 </head>
 
+
+<div id="header">
+    <h1 id="h1-1"> SIMULADOR </h1>
+    <h1 id="h1-2"> CHECK CHICKEN </h1>
+</div>
+
 <div id="caixaGeral">
+   
     <div id="caixaPrincipal">
 
         <div id="caixaLogo1">
@@ -36,8 +48,9 @@
         <input type="text" id="input_custosAdicionais" placeholder="X Reais">
 
 
-        <div id="caixaBotao">
-            <button id="botao" onclick="exibirCalculo()"> Fazer Simulação </button>
+        <div id="caixaBotao" onclick="exibirCalculo()">
+            <h3> FAZER SIMULAÇÃO </h3>
+            
         </div>
 
 
@@ -97,12 +110,7 @@
         var taxaMortalidadeDiaria = taxaMortalidadeMensal / 30
         var galinhasPerdidasDia = galinhasPorLote * taxaMortalidadeDiaria                                   // Galinhas mortas diariamente
         var galinhasPerdidasMes = galinhasPerdidasDia * 30                                                  // Galinhas mortas mensalmente
-        if(galinhasPerdidasDia <= 1){
-            galinhasPerdidasDia = '<b>Aproximadamente 1</b>'
-        } else {
-            galinhasPerdidasDia = galinhasPerdidasDia.toFixed(2)
-        }
-
+        
 
 
         //Cálculos com prejuízo:
@@ -113,6 +121,7 @@
         var lucroMensalA = receitaMensalA - (gastoProducaoA + custosAdicionais)                             // Lucro mensal baseado na quantidade de lotes vendidos e a produção perdida
         var lucroAnualA = (lucroMensalA/4) * 12                                                             // Lucro anual considerando uma margem de valor reduzida por 4 (Devido o problema)
 
+
         //Cálculos sem prejuízo:
         var receitaDiariaB = galinhasPorLote * (1 - taxaMortalidadeDiaria/2) * qntdLotes * precoGalinha     // Receita diária com a nossa solução
         var receitaMensalB = receitaDiariaB * 30                                                            // Receita mensal com a nossa solução
@@ -122,15 +131,14 @@
 
         
 
-        textoExibido.innerHTML += `<h3> Resultados: </h3>
+        textoExibido.innerHTML = `<h3> Resultados: </h3>
            O valor total do seu aviário, referente a qualidade da sua produção e a quantidade produzida, é de <b>R$${valorAviario}</b>, contendo
         <b>${galinhasAviario}</b> galinhas no total.
         <br>
         <br>
            Com uma taxa de <b>${input_taxaMortalidadeMensal.value * 2.5}%</b> de mortalidade anual e <b>${((input_taxaMortalidadeMensal.value))}%</b> mensal, os seus lotes perdem até:
            <br>
-           <b>${galinhasPerdidasDia}</b> Galinhas (diariamente) 
-           <br><b>${galinhasPerdidasMes.toFixed(2)}</b> Galinhas (mensalmente)
+           <b>${galinhasPerdidasMes.toFixed(2)}</b> Galinhas (mensalmente)
            <br>
            <br>
            O que te leva a gerar as seguintes receitas: 
@@ -142,7 +150,13 @@
            <br>
            E um lucro de: <br>
            <b>R$${lucroMensalA.toFixed(2)}</b>  mensais<br>
-           <b>R$${lucroAnualA.toFixed(2)}</b> anual`
+           <b>R$${lucroAnualA.toFixed(2)}</b> anual
+           <br>
+           <br>
+           <br>
+           <br>
+           <div id='resultadosBotao'> Elevar Resultados </div>`
+
 
 
     }
