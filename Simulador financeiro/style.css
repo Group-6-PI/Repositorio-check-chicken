@@ -33,6 +33,11 @@ button {
     color: #5CB767;
 }
 
+.titulo:hover{
+color: #FA8939;
+
+}
+
 .conteiner {
     display: flex;
     flex-direction: row;
