@@ -98,3 +98,63 @@ select * from empresa;
 select * from endereço;
 select * from lote;
 select * from sensor;
+
+
+-- FUNCIONALIDADES E PRÁTICAS:    -----------------------------------------------------------------------
+
+-- Produtores listados:
+SELECT nome as 'Nome dos Produtores' FROM usuario;
+
+
+-- Produtores e os seus respectivos logins:
+SELECT nome as 'Nome dos Produtores', 
+email as 'Email do Usuário',
+senha as 'Senha de Login' FROM usuario;
+
+
+-- Funcionalidade 'Esqueci a senha':
+SELECT nome as Produtor,
+senha as 'Senha Atual' FROM usuario
+	WHERE nome = 'João Silva';
+    
+UPDATE usuario SET senha = 'senha321'
+		WHERE idUsuario = 1;
+
+SELECT nome as Produtor,
+senha as 'Senha Nova' FROM usuario
+	WHERE nome = 'João Silva';
+
+
+-- Verificar Cargo
+SELECT nome as 'Nome dos Produtores', 
+cpf as 'CPF',
+concat('Dono ', idUsuario) as 'Cargo' FROM usuario;
+
+
+-- Opção de confirmar dados na Tabela 2
+SELECT concat('Você confirma os dados? (S/N)', '    CNPJ: ', cnpj, '    Razão Social: ', nome) as Confirmação FROM empresa;
+
+
+-- Mudança de CNPJ
+UPDATE empresa SET cnpj = '76.354.748/0001-54', nome = 'Aviário Figueiras, LTDA'
+		WHERE idEmpresa = 3;
+        
+SELECT * FROM empresa
+	WHERE idEmpresa = 3;
+    
+    
+-- Mudança da qtnd de caracteres do campo nome:
+ALTER TABLE empresa MODIFY COLUMN nome varchar(65);
+
+
+-- Mudança no nome do campo da rua:
+ALTER TABLE empresa RENAME COLUMN rua TO logradouro;
+
+
+-- Exemplo de seleção de faixa etária por identificadores terminados com 1.
+SELECT faixaEtaria as 'Faixa Etária das Galinhas' FROM lote
+	WHERE identificador LIKE '%1';
+
+
+-- Informações gerais sobre os lotes:
+SELECT concat('Há ', qtdGalinha, ' galinhas com a faixa etária de ', faixaEtaria, ' anos no lote ', identificador, '.') as 'Dados dos lotes' FROM lote;
