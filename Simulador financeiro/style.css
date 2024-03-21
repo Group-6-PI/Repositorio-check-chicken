@@ -31,11 +31,7 @@ button {
     padding-top: 37px;
     font-size: 80px;
     color: #5CB767;
-}
-
-.titulo:hover{
-color: #FA8939;
-
+    cursor: pointer;
 }
 
 .conteiner {
@@ -44,9 +40,15 @@ color: #FA8939;
     color: white;
 }
 
+.conteiner_resultado {
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+
 .box {
-    width: 390px;
-    height: 440px;
+    width: 500px;
+    height: 600px;
     border-radius: 30px;
     margin: 13px;
     padding: 5px;
@@ -89,11 +91,33 @@ input {
 
 .box2 {
     background-color: #49794F;
-    font-size: 60px;
+    height: 45.5%;
+    font-size: 50px;
     display: flex;
-
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.box2 span {
+    color: #5CB767;
+}
+
+.box3 {
+    background-color: #49794F;
+    height: 45.5%;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box3 div {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 32px;
+    color: #b3ceb3;
 }
 
 .logo {
@@ -105,73 +129,65 @@ input {
     padding-bottom: 4px;
 }
 
-.destaque {
-    color: #5CB767;
-    text-align: center;
-    cursor: pointer;
-}
-
-.destaque:hover {
-    color: #FA8939;
-}
-
 .seta {
-    width: 100px;
-    height: 40px;
+    width: 80px;
+    height: 45px;
     border: none;
-    border-radius: 30px;
+    border-radius: 40px;
+    font-size: 25px;
     background-color: #FA8939;
     color: white;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
 }
 
 .seta:hover {
     background-color: #dd772d;
 }
 
-.box-setas1 {
+.seta_unica {
     display: flex;
-    width: 100%;
     position: relative;
-    top: 90px;
-    left: 243px;
+    top: 40px;
+    left: 180px;
+    display: flex;
 }
 
-.box-setas2 {
+.seta_dupla {
     display: flex;
-    width: 100%;
-    justify-content: space-around;
+    width: 440px;
+    justify-content: space-between;
     position: relative;
-    top: 90px;
-}
-
-.box-setas3 {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    position: relative;
-    top: 54px;
+    top: 40px;
 }
 
 .dash {
     background-color: #49794F;
-    width: 816px;
-    height: 448px;
+    width: 1050px;
+    height: 620px;
     border-radius: 30px;
-    margin: 13px;
-    padding: 5px;
     position: absolute;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 70px;
 }
 
-.total {
-    color: white;
-    font-size: 60px;
-    text-align: center;
+.dash span {
+    font-size: 70px;
+    color: #b3ceb3;
+    padding-top: 60px;
+}
+
+.conteiner-resultado2 {
+    position: relative;
+    bottom: 34px;
 }
 
 .botao-ajuda {
@@ -180,17 +196,13 @@ input {
     background-color: #FA8939;
     color: white;
     width: 50%;
-    height: 90px;
+    height: 110px;
     font-size: 25px;
     position: relative;
-    bottom: 20px;
+    bottom: 30px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .botao-ajuda:hover {
     background-color: #dd772d;
-}
-
-.menor {
-    font-size: 50px;
 }
