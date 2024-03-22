@@ -11,16 +11,12 @@ void setup() {
 }
 
 void loop() {
-  float umidade = dht_1.readHumidity();
+  float umidade = dht_1.readHumidity() + 10;
   float temperatura = analogRead(pino_lm35) * 0.00488 * 100;
-  if(isnan(temperatura) or isnan(umidade)){
-    Serial.println("Erro ao ler"); 
-  } else {
-  
+
     Serial.print(umidade);
     Serial.print(" % ");
     Serial.print(temperatura);
     Serial.println(" ºC");
-  }
-  delay(2000);
+    delay(1000);
 }
