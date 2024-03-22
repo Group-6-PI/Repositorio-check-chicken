@@ -82,23 +82,22 @@ insert into lote (identificador, qtdGalinha, faixaEtaria) values
 create table sensor (
 idSensor int primary key auto_increment,
 temperatura decimal(4,2),
-umidade int
+umidade int,
+captura datetime
 );
 
-insert into sensor (temperatura, umidade) values
-(25.5, 60),
-(26.3, 55),
-(24.8, 58),
-(27.1, 62),
-(25.9, 57);
-
+insert into sensor (temperatura, umidade, captura) values
+(25.5, 60, '2024-03-20 10:46:27'),
+(26.3, 55, '2024-03-20 12:14:52'),
+(24.8, 58, '2024-03-21 11:32:34'),
+(27.1, 62, '2024-03-21 09:21:45'),
+(25.9, 57, '2024-03-22 16:43:22');
 
 select * from usuario;
 select * from empresa;
 select * from endereço;
 select * from lote;
 select * from sensor;
-
 
 -- FUNCIONALIDADES E PRÁTICAS:    -----------------------------------------------------------------------
 
